@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Formulario para Ingreso a Escuela de Futbol</h1>
+            <p id="description" class="description text-center">"Formando Talentos"</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Nombre</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Digita tu Nombre" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Digita tu Email" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Edad<span>(optional)</span></label>
+                <input type="number" name="age" id="number" min="04" max="99" class="form-control" placeholder="Digita tu Edad" required>
+            </div>
+            <div class="form-group">
+                <p>Escoga una opción</p>
+                <select name="role" id="list" class="form-control" required>
+                    <option disabled selected value>Seleccciona tu posición de juego</option>
+                    <option value="Estudiante">Arquero</option>
+                    <option value="trabajo">Defensa</option>
+                    <option value="aprendiz">Mediocampo</option>
+                    <option value="decision">Delantero</option>
+                    <option value="otro">otra posicion de juego</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>
+                    Que le gusta de nuestra escuela de formación?
+                </p>
+                <label>
+                    <input type="radio" name="usuario" value="definitivo" class="input-radio"
+                    checked>Instalaciones</label>
+                <label>
+                    <input type="radio" name="usuario" value="Quizas" class="input-radio"
+                    >Formas de practicar</label>
+                <label>
+                    <input type="radio" name="usuario" value="no-seguro" class="input-radio"
+                    >Todo su entorno y staff de trabajo</label>
+            </div>
+            <div class="form-group">
+                <p>Cual es tu caracteristica de juego?</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled selected value>Seleccione una opción</option>
+                    <option value="delantero">Hacer goles</option>
+                    <option value="Volante">Creacion de juego</option>
+                    <option value="defensa">Proyección de salida</option>
+                    <option value="arquero">Defender el arco</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>
+                    Que le gustaria mejorar en su posición de juego?<span class="clue">(Marque las opciones)</span>
+                </p>
+                <label>
+                    <input type="checkbox" name="preferencia" value="Saltar" class="input-checkbox">Saltar a cabezear
+                </label>
+                <label>
+                    <input type="checkbox" name="preferencia" value="penales" class="input-checkbox">Tapar penales
+                </label>
+                <label>
+                    <input type="checkbox" name="preferencia" value="Armar" class="input-checkbox">Armar el juego
+                </label>
+                <label>
+                    <input type="checkbox" name="preferencia" value="defender" class="input-checkbox">Defender fuerte
+                </label>
+                <label>
+                    <input type="checkbox" name="preferencia" value="salida" class="input-checkbox">Buena salida con el balón
+                </label>
+                <label>
+                    <input type="checkbox" name="preferencia" value="definicion" class="input-checkbox">Buena definición
+                </label>
+            </div>
+                <div class="form-group">
+                    <p>
+                        Escriba un comentario de su estilo de juego y lo que le gustaria ser en el futuro.
+                    </p>
+                    <textarea class="input-textarea" name="comentario" id="comentarios" cols="30" rows="10" placeholder="Digite su comentario"></textarea>
+                </div>
+                <div>
+                    <button type="submit" id="submit" class="submit-button" >Enviar</button>
+                </div>
+        </form>
+    </div>
+</body>
+</html>

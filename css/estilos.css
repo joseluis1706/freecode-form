@@ -1,0 +1,73 @@
+@import "responsive.css";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --blanco:#f3f3f3;
+    --darkblue:#1b1b32;
+    --naranja:#FF8E58;
+    --rojo:#F55353;
+    --amarillo:#E3C453;
+    --darkblue-alpha:rgba(27, 27, 50, 0.8);
+    --green:#37af65;
+    --negro: #000;
+    --azul:#246C85;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--negro);
+    margin: 0;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--naranja);
+    background-image: linear-gradient(
+        115deg,
+        rgba(224, 190, 96, 0.699),
+        rgba(168, 162, 135, 0.7)),url(https://i.ytimg.com/vi/_0IGfJu-wi4/hqdefault.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+h1{
+    font-weight: 400;
+    line-height: 1.2;
+}
+p{
+    font-size: 1.3rem;
+}
+h1, p{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+label{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+input, button, select, textarea{
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button{
+    border: none;
+}
+.container{
+    width: 100%;
+    margin: 3.2rem auto 0 auto;
+}
